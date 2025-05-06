@@ -1,4 +1,10 @@
 package study.mymemo.dto.request;
 
-public record MemoCreateRequest() {
+import java.util.List;
+
+public record MemoCreateRequest(
+        String title,
+        String content,
+        List<Long> categoryIds
+) {
 }
